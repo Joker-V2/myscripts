@@ -88,6 +88,13 @@ SILENCE=0
 # 1 is YES | 0 is NO(default)
 LOG_DEBUG=0
 
+## ! EXPERIMENTAL ! ##
+# Set build variant
+# Do not uncomment unless you are aware about consequences
+TARGET_BUILD_VARIANT=user
+DISABLE_DEBUGFS=true
+export TARGET_BUILD_VARIANT DISABLE_DEBUGFS
+
 ##------------------------------------------------------##
 ##---------Do Not Touch Anything Beyond This------------##
 
