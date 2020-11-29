@@ -105,7 +105,8 @@ export TARGET_BUILD_VARIANT DISABLE_DEBUGFS
 DISTRO=$(cat /etc/issue)
 KBUILD_BUILD_HOST=$(uname -a | awk '{print $2}')
 CI_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-export KBUILD_BUILD_HOST CI_BRANCH
+TERM=xterm
+export KBUILD_BUILD_HOST CI_BRANCH TERM
 
 ## Check for CI
 if [ -n "$CI" ]
